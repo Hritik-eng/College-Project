@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+.cont{
+border:2px solid black;
+}
+#btn{
+margin-left:80px;
+width:200px;
+height:40px;
+background-color:green;
+}
+h1{
+text-align:center;
+text-decoration:underline;
+}
+#p,#x,#y,#z{
+color:blue;
+}
+</style>
+</head>
+<body>
+<div class="container cont">
+<form action="reg.php" method="post" id="form" >
+<div id="div">
+<h1>Sign in for free</h1>
+<p>Create your account for <strong>Online Mobile Recharge</strong>.</p>
+<div class="row">
+<div ><strong>First Name:   </strong>
+<i class="fas fa-user-alt"></i></div>
+<div class="col-10"><input type="text" name="first"  placeholder="       first name"   class="form-control"/></div>
+</div>
+</br>
+<div class="row">
+<div><strong>Last Name:   </strong>
+<i class="fas fa-user-alt"></i></div>
+<div class="col-10"><input type="text" name="last" placeholder="       last name"  class="form-control"/></div>
+</div>
+<br/>
+<div class="row">
+<div><strong>Email:   </strong>
+<i class="fas fa-envelope-square"></i></div>
+<div class="col-10"><input type="email" name="email" placeholder="example123@gmail.com"   class="form-control"/></div>
+</div>
+<br/>
+<div class="row">
+<div><strong>Contact No.  </strong>
+<i class="fas fa-phone-square-alt"></i></div>
+<div class="col-10"><input  class="form-control" type="tel" name="num" placeholder="Mobile No." id="num"/></td><strong id="sma"></strong> <br/><span id="x"> </span></div>
+</div>
+<div class="row">
+<div><strong>Password:   </strong>
+<i class="fas fa-lock"></i></div>
+<div class="col-10"><input type="Password" name="pass" placeholder="Password" id="pass"  class="form-control"/></td><strong id="st"></strong> <br/><span id="y"></span></div>
+</div>
+<div class="row">
+<div><strong>Confirm-Password:   </strong>
+<i class="fas fa-lock"></i></div>
+<div class="col-10"><input type="Password" name="Cpass" placeholder="Confirm Password"  id="Cpass"  class="form-control"/></td><span id="z"></span></div>
+</div><br/>
+<p><input type="checkbox" /> I accept the <strong class="em">Terms of Use</strong> & <strong class="em">Privacy Policy</strong>.</p>
+<button id="btn"><strong id="b">Sign in</strong></button>
+<br/>
+<p id="p">Already have an account? <a href="login.html">Log in</a></p>
+</div>
+</form>
+</div>
+<script src="reg.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
+
+
+
+

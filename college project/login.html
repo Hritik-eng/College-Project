@@ -1,0 +1,87 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/all.css"/>
+<style>
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+#btn{
+margin-left:185px;
+width:200px;
+height:40px;
+background-color:green;
+}
+</style>
+<title>Login page</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<br/><br/>
+<div class="container cont">
+  <div class="mb-3 row"><br/><br/>
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="staticEmail">
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword">
+    </div>
+  </div>
+<div class="dropdown">
+<button id="bt" class="dropbtn" onclick="dropdown()">sim</button><i class="fa fa-caret-down"></i>
+<div id="drop" class="dropdown-content">
+   <a href="#">Airtel</a>
+   <a href="#">Idea</a>
+   <a href="#">Jio</a>
+   <a href="#">Vodafone</a>
+</div>
+<button width="20px" id="btn">Log in</button>
+</div>
+<script>
+function dropdown(){
+document.getElementById("drop").classList.toggle("show");
+}
+</script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
